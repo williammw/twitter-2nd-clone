@@ -5,8 +5,8 @@ import TwitterLogo from '../images/Twitter-logo.svg'
 import SideBarRow from './SideBarRow'
 function Sidebar() {
   return (
-    <div>
-      <div className="h-10 w-10">
+    <div className='flex flex-col col-span-2 items-center px-4 md:items-start'>
+      <div className="h-10 w-10 m-3">
         <Image 
           src={TwitterLogo} alt=""/>
       </div>
@@ -17,6 +17,9 @@ function Sidebar() {
       <SideBarRow Icon={MailIcon} title="Messages"/>
       <SideBarRow Icon={BookmarkIcon} title="Bookmarks"/>
       <SideBarRow Icon={CollectionIcon} title="Lists"/>
+      <SideBarRow Icon={UserIcon} title="Lists"/>
+
+      <SideBarRow Icon={DotsCircleHorizontalIcon} title="Lists"/>
 
     </div>
   )
