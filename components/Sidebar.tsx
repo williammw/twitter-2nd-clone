@@ -2,7 +2,7 @@ import React from 'react'
 import {BellIcon, HashtagIcon, BookmarkIcon, CollectionIcon, DotsCircleHorizontalIcon, MailIcon, UserIcon, HomeIcon } from '@heroicons/react/outline'
 import Image from 'next/image'
 import TwitterLogo from '../images/Twitter-logo.svg'
-import SideBarRow from './SideBarrow'
+import SideBarRow from './SideBarRow'
 function Sidebar() {
   return (
     <div>
@@ -12,11 +12,11 @@ function Sidebar() {
       </div>
       
       <SideBarRow Icon={HomeIcon} title="Home"/>
-      <SideBarRow Icon={HashtagIcon} title="Home"/>
-      <SideBarRow Icon={BellIcon} title="Home"/>
-      <SideBarRow Icon={MailIcon} title="Home"/>
-      <SideBarRow Icon={BookmarkIcon} title="Home"/>
-      <SideBarRow Icon={CollectionIcon} title="Home"/>
+      <SideBarRow Icon={HashtagIcon} title="Explore"/>
+      <SideBarRow Icon={BellIcon} title="Notifications"/>
+      <SideBarRow Icon={MailIcon} title="Messages"/>
+      <SideBarRow Icon={BookmarkIcon} title="Bookmarks"/>
+      <SideBarRow Icon={CollectionIcon} title="Lists"/>
 
     </div>
   )
