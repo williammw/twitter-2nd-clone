@@ -17,9 +17,9 @@ function Sidebar() {
       <SideBarRow Icon={MailIcon} title="Messages"/>
       <SideBarRow Icon={BookmarkIcon} title="Bookmarks"/>
       <SideBarRow Icon={CollectionIcon} title="Lists"/>
-      <SideBarRow Icon={UserIcon} title="Lists"/>
+      <SideBarRow Icon={UserIcon} title="Sign In"/>
 
-      <SideBarRow Icon={DotsCircleHorizontalIcon} title="Lists"/>
+      <SideBarRow Icon={DotsCircleHorizontalIcon} title="More"/>
 
     </div>
   )
