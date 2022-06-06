@@ -155,7 +155,7 @@ function Tweet({ tweet }: Props) {
 
                   <TimeAgo
                     className="text-sm text-gray-500"
-                    date={comment._createdAt}
+                    datetime={comment._createdAt}
                   />
                 </div>
                 <p>{comment.comment}</p>
