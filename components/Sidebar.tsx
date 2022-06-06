@@ -3,7 +3,11 @@ import {BellIcon, HashtagIcon, BookmarkIcon, CollectionIcon, DotsCircleHorizonta
 import Image from 'next/image'
 import TwitterLogo from '../images/Twitter-logo.svg'
 import SideBarRow from './SideBarRow'
+import { signIn, signOut, useSession } from 'next-auth/react'
 function Sidebar() {
+
+  const {data:session} = useSession()
+
   return (
     <div className='flex flex-col col-span-2 items-center px-4 md:items-start'>
       <div className="h-10 w-10 m-3">
@@ -17,7 +21,11 @@ function Sidebar() {
       <SideBarRow Icon={MailIcon} title="Messages"/>
       <SideBarRow Icon={BookmarkIcon} title="Bookmarks"/>
       <SideBarRow Icon={CollectionIcon} title="Lists"/>
-      <SideBarRow Icon={UserIcon} title="Sign In"/>
+      <SideBarRow 
+        onClick={session ? signOut : signIn} 
+        Icon={UserIcon} 
+        title={session ? 'Sign Out' : 'Sign In'}
+      />
 
       <SideBarRow Icon={DotsCircleHorizontalIcon} title="More"/>
 
